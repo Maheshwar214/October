@@ -1,3 +1,4 @@
+cat > Jenkinsfile <<'EOF'
 pipeline {
     agent any
 
@@ -11,9 +12,9 @@ pipeline {
         stage('Validate Source') {
             steps {
                 sh '''
-                    test -f site/index.html
-                    test -f site/style.css
-                    test -f site/script.js
+                    test -f index.html
+                    test -f style.css
+                    test -f script.js
                     test -f Dockerfile
                 '''
             }
@@ -48,3 +49,4 @@ pipeline {
         }
     }
 }
+EOF
