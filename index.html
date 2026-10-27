@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopKart - Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">ShopKart<span>.</span></a>
+    <input id="search" type="search" placeholder="Search products...">
+    <button id="cart-button">🛒 Cart (<span id="count">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tag">YOUR EVERYDAY MARKETPLACE</p>
+      <h1>Find your next<br>favourite thing.</h1>
+      <p>Discover great products at prices you'll love.</p>
+      <a class="shop-button" href="#products">Shop now →</a>
+    </div>
+    <div class="hero-art">🛍️</div>
+  </section>
+
+  <main id="products">
+    <div class="heading">
+      <div>
+        <p class="tag">HANDPICKED FOR YOU</p>
+        <h2>Popular products</h2>
+      </div>
+      <select id="category">
+        <option value="all">All categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home">Home</option>
+      </select>
+    </div>
+    <div id="product-grid" class="grid"></div>
+    <p id="empty" hidden>No products found.</p>
+  </main>
+
+  <section id="cart-panel" hidden>
+    <button id="close-cart">Close ✕</button>
+    <h2>Your shopping cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button id="checkout">Proceed to checkout</button>
+    <p id="message"></p>
+  </section>
+
+  <footer>© 2026 ShopKart | Sample E-commerce Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+EOF
